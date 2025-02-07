@@ -6,7 +6,7 @@
 /*   By: yes <yes@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 14:57:58 by frbranda          #+#    #+#             */
-/*   Updated: 2025/02/06 20:06:57 by yes              ###   ########.fr       */
+/*   Updated: 2025/02/07 15:15:58 by yes              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	write_string_to_bit(pid_t pid, int c)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep (4000);
+		usleep (1000);
 		i--;
 	}
 }
